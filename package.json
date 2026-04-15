@@ -1,0 +1,30 @@
+{
+  "name": "rank-bot",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development node build.mjs && cross-env NODE_ENV=development node --enable-source-maps dist/index.mjs",
+    "build": "node build.mjs",
+    "start": "node dist/index.mjs"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0",
+    "pino": "^9.7.0",
+    "pino-http": "^10.4.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^22.0.0",
+    "cross-env": "^7.0.3",
+    "esbuild": "^0.25.0",
+    "esbuild-plugin-pino": "^2.3.3",
+    "pino-pretty": "^13.0.0",
+    "thread-stream": "^3.1.0",
+    "typescript": "^5.8.3"
+  }
+}
